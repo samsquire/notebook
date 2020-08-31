@@ -20,7 +20,6 @@ if __name__ == '__main__':
 
 
     sentences, words = workers.get_words_sentences("data2.txt")
-    import sys
     sys.stdout.flush()
     for word1, word2 in combinations(words, 2):
         work_queue.put((word1, word2))

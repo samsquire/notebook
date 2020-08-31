@@ -1,3 +1,6 @@
+import sys
+from scipy.stats import pearsonr, spearmanr
+
 def allequal(data):
     equality = data[0]
     for item in data:
