@@ -12,9 +12,8 @@ def get_words_sentences(filename):
     sentence = open(filename).read()
     sentence = sentence.lower()
     sentence = sentence.replace("\n", ".")
-    print("New lines replaced with sentences")
+    sentence = sentence.replace(",", "")
     sentences = sentence.split(".")
-    print("Got {} sentences".format(len(sentences)))
     remove_sentences = sentence.replace(".", "")
     all_words = remove_sentences.split(" ")
     words = list(set(filter(lambda x: len(x) > 0, all_words)))
@@ -22,11 +21,14 @@ def get_words_sentences(filename):
     
 def work(q, quit):
     sentences, words = get_words_sentences("data2.txt")
-    print("Worker started")
     
     sys.stdout.flush()
-    while not quit.is_set():
+    
+    while True:    
         word1, word2 = q.get()
+        if word1 == None:
+            break
+
         word1data = []
         word2data = []
         word1verdict = 0
@@ -58,4 +60,5 @@ def work(q, quit):
         if run_correlation == True:
             correlation, _ = spearmanr(word1data, word2data)
             if correlation > 0:
-                print("is {} correlated with {} = {}".format(word1, word2, correlation))
+                print("\"{}\",\"{}\",\"{}\"".format(word1, word2, correlation))
+                
