@@ -1,0 +1,19 @@
+64
+Creating worker...
+Creating worker...
+Creating worker...
+Creating worker...
+New lines replaced with sentences
+Got 6 sentences
+New lines replaced with sentences
+Got 6 sentences
+Worker started
+New lines replaced with sentences
+Got 6 sentences
+Worker started
+New lines replaced with sentences
+Got 6 sentences
+Worker started
+New lines replaced with sentences
+Got 6 sentences
+Worker started
