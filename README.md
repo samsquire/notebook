@@ -1,5 +1,9 @@
 # notebook
 
+This is a holding area for code I'm writing now. At the moment it contains early versions of my sql database and my graph database.
+
+See https://github.com/samsquire/hash-db for my distributed database.
+
 # correlation-engine
 
 Correlation engine is a dream program I wish that existed that let me detect correlations between things that I am doing.
