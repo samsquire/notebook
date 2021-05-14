@@ -1,0 +1,16 @@
+         93355 function calls (85963 primitive calls) in 0.123 seconds
+
+   Ordered by: cumulative time
+   List reduced from 141 to 10 due to restriction <10>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.003    0.003    0.123    0.123 {built-in method builtins.exec}
+        1    0.000    0.000    0.120    0.120 <string>:1(<module>)
+      155    0.000    0.000    0.114    0.001 pprint.py:47(pprint)
+      155    0.000    0.000    0.113    0.001 pprint.py:147(pprint)
+  813/155    0.002    0.000    0.111    0.001 pprint.py:163(_format)
+        3    0.001    0.000    0.105    0.035 <string>:109(query)
+    42/20    0.000    0.000    0.100    0.005 pprint.py:219(_pprint_list)
+    42/20    0.000    0.000    0.099    0.005 pprint.py:362(_format_items)
+   163/27    0.000    0.000    0.096    0.004 pprint.py:189(_pprint_dict)
+   163/27    0.002    0.000    0.093    0.003 pprint.py:345(_format_dict_items)
