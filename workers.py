@@ -51,6 +51,7 @@ def work(q, quit):
                 word2data.append(1)
             else:
                 word2data.append(0)
+        q.task_done()
         if allequal(word1data):
             # print("{} always appears with {}".format(word1, word2))
             run_correlation = False
